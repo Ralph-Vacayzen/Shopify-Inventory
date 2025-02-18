@@ -6,10 +6,11 @@ st.set_page_config(page_title='Shopify Inventory', page_icon='📋', layout="wid
 
 st.caption('VACAYZEN')
 st.title('Shopify Inventory')
-st.info('Combine inventory files.')
+st.info('Combine Shopify inventory files into a single, concise spreadsheet.')
 
-products_export_file   = st.file_uploader('Products Export',  'CSV')
-monthly_inventory_file = st.file_uploader('Monthly Inventory','CSV')
+l, r = st.columns(2)
+products_export_file   = l.file_uploader('Products Export',  'CSV')
+monthly_inventory_file = r.file_uploader('Monthly Inventory','CSV')
 
 if products_export_file and monthly_inventory_file:
 
