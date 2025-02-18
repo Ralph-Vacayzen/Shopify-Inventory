@@ -9,8 +9,8 @@ st.title('Shopify Inventory')
 st.info('Combine Shopify inventory files into a single, concise spreadsheet.')
 
 l, r = st.columns(2)
-products_export_file   = l.file_uploader('Products Export',  'CSV')
-monthly_inventory_file = r.file_uploader('Monthly Inventory','CSV')
+monthly_inventory_file = l.file_uploader('Monthly Inventory','CSV')
+products_export_file   = r.file_uploader('Products Export',  'CSV')
 
 if products_export_file and monthly_inventory_file:
 
